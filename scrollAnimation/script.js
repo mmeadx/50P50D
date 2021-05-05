@@ -10,6 +10,8 @@ function checkBoxes() {
     const triggerBottom = window.innerHeight / 5 * 4;
 
     boxes.forEach(box => {
+
+        //getBoundingClientRect finds attributes of element, including top, bottom, x and y coordinates
         const boxTop = box.getBoundingClientRect().top;
 
         if(boxTop < triggerBottom) {
